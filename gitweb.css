@@ -87,7 +87,7 @@ i {
 }
 
 td, th {
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .page_nav br {
@@ -159,8 +159,6 @@ a.rss_logo {
   padding: 3px 1px;
   width: 35px;
   line-height: 10px;
-  border: 1px solid;
-  border-color: #fcc7a5 #7d3302 #3e1a01 #ff954e;
   color: #ffffff;
   background-color: #ff6600;
   font-weight: bold;
@@ -170,6 +168,10 @@ a.rss_logo {
   text-decoration: none;
   margin-top: 30px;
   margin-left: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
 }
 
 a.rss_logo:hover {
@@ -239,6 +241,18 @@ th .header {
 .tree {
   width: 100%;
   margin: 0;
+}
+
+td.mode,
+td.size,
+td.link {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.tree .size {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .projsearch {
